@@ -1,4 +1,4 @@
-version: '2'
+version: '3.2'
 services:
   mysql:
     image: mysql:5.7
@@ -6,9 +6,11 @@ services:
     ports:
       - 3306:3306
     environment:
-      MYSQL_ROOT_PASSWORD: '123456'
+      - MYSQL_ROOT_PASSWORD= '123456'
+      - TZ=Asia/Bangkok
     volumes:
-      - ./mymqli:/var/lib/mysql      
+      - ./mymqli:/var/lib/mysql    
+    # command: ['mysqld','--default-time-zone=+07:00']  
 networks:
   default:
     external:
