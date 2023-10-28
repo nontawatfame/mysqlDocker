@@ -1,6 +1,7 @@
 version: '3.2'
 services:
   mysql:
+    container_name: mysqldocker-mysql-1
     image: mysql:5.7
     restart: always
     ports:
