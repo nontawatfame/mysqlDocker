@@ -2,12 +2,12 @@ version: '3.2'
 services:
   mysql:
     container_name: mysqldocker-mysql-1
-    image: mysql:5.7
+    image: mysql
     restart: always
     ports:
       - 3306:3306
     environment:
-      - MYSQL_ROOT_PASSWORD= '123456'
+      - MYSQL_ROOT_PASSWORD=1412ff@wD
       - TZ=Asia/Bangkok
     volumes:
       - ./mymqli:/var/lib/mysql    
