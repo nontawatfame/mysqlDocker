@@ -7,7 +7,7 @@ services:
     ports:
       - 3306:3306
     environment:
-      - MYSQL_ROOT_PASSWORD=1412ff@wD
+      - MYSQL_ROOT_PASSWORD=234non@dfaA
       - TZ=Asia/Bangkok
     volumes:
       - ./mymqli:/var/lib/mysql    
